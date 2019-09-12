@@ -1,0 +1,38 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .currency-list {
+   display:flex;
+   flex-direction: column
+ }
+
+ .currency-list-item {
+   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+   padding: 20px;
+   border-radius:8px;
+   margin: 5px;
+   border:1px solid rgba(0,0,0,0.25);
+   list-style-type:none;
+   font-size:18px;
+   margin: 5px 15px 0 0;
+   /* transition: ease-in-out 0.3s; */
+ }
+
+ .currency-list-item:hover {
+   background:#eee;
+   cursor:pointer;
+   margin: 10px 15px 10px 0;
+ }
